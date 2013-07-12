@@ -6,13 +6,17 @@ var app = express.createServer(express.logger());
 
 //var buffer_text = new Buffer( 100);
 
-//var FileBuffer = new Buffer( 1000);
+var buf = new Buffer( 1000);
 
-var FileBuffer = fs.readFile('index.html'); 
+buf = fs.readFileSync('./index.html'); 
+
+var OutString = buf.toString(); 
+
+// console.log(OutString);
 
 app.get('/', function(request, response) {
 //  response.send('Hello World2!');
-  response.send(FileBuffer.toString('utf8'));
+  response.send(OutString);
 });
 
 var port = process.env.PORT || 5000;
