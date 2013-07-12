@@ -12,7 +12,7 @@ file_buffer = fs.readFile('index.html');
 
 app.get('/', function(request, response) {
 //  response.send('Hello World2!');
-  response.send(file_buffer.toString());
+  response.send(file_buffer.toString('utf8',0,file_buffer.length));
 });
 
 var port = process.env.PORT || 5000;
