@@ -229,7 +229,8 @@ With Pixie you will be able to store all your images securely, yet share them wi
   <div class="row-fluid faq">
     <div class="span10 offset1"> 
       <h3>FAQ</h3>
-      <div class="accordion" id="accordion2">
+      
+      <div class="accordion" id="accordion3">
 	<div class="accordion-group">
 	  <div class="accordion-heading">
 	    <a class="accordion-toggle" data-toggle="collapse"
@@ -245,33 +246,36 @@ to them can view them. In many cases, intended users can save these images and t
 	    </div>
 	  </div>
 	</div>
-       <div class="accordion-group">
-          <div class="accordion-heading">
-            <a class="accordion-toggle" data-toggle="collapse"
-               data-parent="#accordion2" href="#collapseOne">
-How about encrypting images? Would that work?
-            </a>
-          </div>
-          <div id="collapseOne" class="accordion-body collapse">
-            <div class="accordion-inner">
-Encryption would protect the images
-            </div>
-          </div>
-        </div>
+
 	<div class="accordion-group">
           <div class="accordion-heading">
             <a class="accordion-toggle" data-toggle="collapse"
-               data-parent="#accordion2" href="#collapseOne">
-and what is that? 
+               data-parent="#accordion2" href="#collapseTwo">
+How about encrypting images? Would that work?
             </a>
           </div>
-          <div id="collapseOne" class="accordion-body collapse">
+          <div id="collapseTwo" class="accordion-body collapse">
             <div class="accordion-inner">
-A question that is commonly asked by users
+End-to-end encryption, from sender to receiver, would protect the images but it would make it impossible to use existing infrastructure for sharing. Most sharing systems expect to work with JPEG images, and many tools used for sharing, such as resizing images to work at the correct resolution for a given display, would no longer work with encrypted images. 
+            </div>
+          </div>
+        </div>
+
+	<div class="accordion-group">
+          <div class="accordion-heading">
+            <a class="accordion-toggle" data-toggle="collapse"
+               data-parent="#accordion2" href="#collapseThree">
+How does Pixie provide privacy? 
+            </a>
+          </div>
+          <div id="collapseThree" class="accordion-body collapse">
+            <div class="accordion-inner">
+Pixie's technology removes information from JPEG images and encrypts it. The encrypted image information is shared separately from the JPEG image, and the JPEG image can be processed and resized as commonly done with existing systems. 
             </div>
           </div>
         </div>
       </div>
+      
     </div>
 
   </div>
@@ -279,7 +283,7 @@ A question that is commonly asked by users
   <div class="row-fluid footer">
     <div class="span12">
       <p> This work is licensed under the 
-	<a href="http://creativecommons.org/licenses/by-sa/3.0/">CC By-SA 3.0 </a>, but without all the text. </p>
+	<a href="http://creativecommons.org/licenses/by-sa/3.0/">CC By-SA 3.0 </a>. </p>
     </div>
   </div>
 </div>
